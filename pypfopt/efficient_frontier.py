@@ -109,6 +109,7 @@ class EfficientFrontier(BaseOptimizer):
             x0=self.initial_guess,
             args=args,
             method="SLSQP",
+            options={'maxiter':1000},
             bounds=self.bounds,
             constraints=self.constraints,
         )
